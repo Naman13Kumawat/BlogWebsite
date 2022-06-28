@@ -36,7 +36,11 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(process.env.PORT || "5000", () => {
+app.get("/", (req, res) => {
   connect();
+  res.send("Backend Connected!");
+})
+
+app.listen(process.env.PORT || "5000", () => {
   console.log(`Backend running on PORT: 5000`);
 });

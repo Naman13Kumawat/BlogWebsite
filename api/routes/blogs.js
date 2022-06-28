@@ -4,7 +4,7 @@ import { createBlog, getBlogs, getBlog, deleteBlog, updateBlog } from '../contro
 const router = express.Router();
 
 // CREATE BLOG
-router.post("/", createBlog)
+router.post("/:username", createBlog)
 
 // GET BLOG
 router.get("/:blogId", getBlog)
