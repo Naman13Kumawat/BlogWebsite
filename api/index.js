@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv"; 
 import userRoutes from "./routes/users.js";
 import blogRoutes from "./routes/blogs.js";
+import authRoutes from "./routes/auth.js";
 
 const app = express();
 dotenv.config();
@@ -24,6 +25,7 @@ app.use(express.json());
 
 app.use("/users", userRoutes);
 app.use("/blogs", blogRoutes);
+app.use("/auth", authRoutes);
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;
@@ -37,10 +39,10 @@ app.use((err, req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  connect();
   res.send("Backend Connected!");
 })
 
 app.listen(process.env.PORT || "5000", () => {
+  connect();
   console.log(`Backend running on PORT: 5000`);
 });

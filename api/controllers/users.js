@@ -8,13 +8,3 @@ export const getUser = async (req, res, next) => {
     next(err);
   }
 };
-
-export const createUser = async (req, res, next) => {
-    try{
-        const newUser = new User(req.body);
-        await newUser.save();
-        res.status(200).json(newUser);
-    }catch (err) {
-        next(err);
-    }
-}
