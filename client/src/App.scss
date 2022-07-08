@@ -1,0 +1,10 @@
+.flex_container{
+    display: flex;
+    justify-content: space-around;
+
+    .main{
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+    }
+}
