@@ -1,4 +1,120 @@
-.sidebar_container{
+.sidebar_container {
     display: flex;
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
     flex: 1;
+    justify-content: flex-start;
+    background-color: var(--bg-primary);
+    justify-content: center;
+    color: var(--text-primary);
+    transition: width 200ms ease;
+    padding: 2rem 0;
+
+    .logo {
+        width: 34px;
+        height: 30px;
+        position: relative;
+        transition: all 200ms ease;
+        margin-bottom: 2rem;
+
+        .line1 {
+            background-color: var(--bg-secondary);
+            width: 10px;
+            height: 30px;
+            border-radius: 2px;
+            position: absolute;
+            transition: all 200ms ease;
+        }
+
+        .line2 {
+            width: 10px;
+            height: 20px;
+            position: absolute;
+            border-radius: 2px;
+            left: 14px;
+            top: 5px;
+            background-color: var(--bg-secondary);
+            transition: all 200ms ease;
+        }
+
+
+
+    }
+
+    .sidebar-nav {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border-radius: 5px;
+            margin: 5px;
+            justify-content: center;
+            padding: 1rem;
+            
+
+            &:nth-child(5) {
+                margin-top: auto;
+            }
+
+            .nav-link {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                .link-text {
+                    display: none;
+                    margin-left: 1rem;
+                }
+            }
+
+            &.active{
+                background-color: var(--bg-secondary);
+                color: var(--text-secondary);
+
+                .link-text {
+                    color: var(--text-secondary);
+                }
+            }
+
+            &:hover {
+                background-color: var(--bg-secondary);
+                color: var(--text-secondary);
+            }
+
+            &:hover .nav-link {
+                .link-text {
+                    color: var(--text-secondary);
+                }
+            }
+        }
+    }
+
+    &:hover {
+        width: 14rem;
+    }
+
+    &:hover .logo .line1 {
+        transform: translateX(14px);
+    }
+
+    &:hover .logo .line2 {
+        transform: translateX(-14px);
+    }
+
+    &:hover .sidebar-nav {
+        .nav-item {
+            justify-content: flex-start;
+            .nav-link {
+                .link-text {
+                    display: block;
+                }
+            }
+        }
+    }
 }

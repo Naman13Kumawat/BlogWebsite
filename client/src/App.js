@@ -1,17 +1,19 @@
+import React from "react";
 import { Sidebar, Discover, Searchbar, Profilebar } from "./components";
+
 import "./App.scss";
 
-function App() {
+export default function App() {
   return (
+    <>
+    <Sidebar />
     <div className="flex_container">
-      <Sidebar />
       <div className="main">
         <Searchbar />
         <Discover />
       </div>
       <Profilebar />
     </div>
+    </>
   );
 }
-
-export default App;

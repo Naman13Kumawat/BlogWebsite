@@ -1,10 +1,40 @@
+:root{
+    --text-primary: #000;
+    --text-secondary: #fff;
+    --bg-primary: #fff;
+    --bg-secondary: rgb(70, 70, 70);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    &::-webkit-scrollbar{
+        width: 0.25rem;
+    }
+    &::-webkit-scrollbar-track{
+        background: lightgray;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #000;
+    }
+
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
+}
+
+
+
 .flex_container{
     display: flex;
     justify-content: space-around;
+    margin-left: 5rem;
 
     .main{
         display: flex;
-        flex: 2;
+        flex: 5;
         flex-direction: column;
     }
 }
