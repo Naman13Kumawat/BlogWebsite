@@ -18,25 +18,25 @@ export default function Sidebar() {
         <li className="nav-item active">
           <GridViewOutlinedIcon />
           <a href="#" className="nav-link">
-            <span className="link-text">Cats</span>
+            <span className="link-text">Discover</span>
           </a>
         </li>
         <li className="nav-item">
           <ImageAspectRatioIcon />
           <a href="#" className="nav-link">
-            <span className="link-text">Space</span>
+            <span className="link-text">Your Posts</span>
           </a>
         </li>
         <li className="nav-item">
           <EditIcon />
           <a href="#" className="nav-link">
-            <span className="link-text">Earth</span>
+            <span className="link-text">New Post</span>
           </a>
         </li>
         <li className="nav-item">
           <EventIcon />
           <a href="#" className="nav-link">
-            <span className="link-text">UFOs</span>
+            <span className="link-text">About Us</span>
           </a>
         </li>
         <li className="nav-item">
