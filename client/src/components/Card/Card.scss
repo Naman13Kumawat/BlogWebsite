@@ -1,0 +1,55 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+
+    .postImg {
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        width: 25rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 0.8rem;
+        color: rgb(180, 180, 180);
+    }
+
+    .user {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+
+        img {
+            width: 2rem;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        
+        p {
+            position: relative;
+
+            .circle {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background-color: rgb(165, 165, 165);
+                top: 3px;
+                border-radius: 5px;
+            }
+
+            b {
+                color: var(--text-primary)
+            }
+        }
+    }
+
+}

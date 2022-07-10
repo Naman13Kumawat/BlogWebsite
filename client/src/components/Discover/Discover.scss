@@ -1,0 +1,94 @@
+.discover_container {
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: column;
+
+    h1 {
+        font-weight: 600;
+    }
+
+    .btn {
+        background: none;
+        border: 1px solid lightgray;
+        font-family: "Montserrat", "Helvetica Neue", sans-serif;
+        font-weight: 600;
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+
+        &:hover {
+            background-color: var(--bg-secondary);
+            color: var(--text-secondary);
+        }
+    }
+
+    .heading {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .banner {
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        margin: 2rem 0;
+        width: 100%;
+        border-radius: 10px;
+
+        .banner_body {
+            border-radius: 10px 0 0 10px;
+            padding:2rem;
+            background-image: url(https://media.istockphoto.com/vectors/abstract-black-stripes-diagonal-background-vector-id1294603953?k=20&m=1294603953&s=612x612&w=0&h=KLAV73oMUFA2ucWMMTOdXT8Vn4LVUsh6NTiXRmlX5ZA=);
+            color: var(--text-secondary);
+
+            h1{
+                line-height: 2;
+                font-size: 1.8rem;
+            }
+
+            p{
+                font-size: 0.8rem;
+                line-height: 2;
+                margin: 1rem 0;
+                opacity: 0.5;
+            }
+
+            .btn_banner{
+                background-color:  #fff;
+                border: none;
+                font-family: "Montserrat", "Helvetica Neue" , sans-serif;
+                font-weight: 600;
+                font-size: 0.7rem;
+                padding: 0.5rem 1.5rem;
+                cursor: pointer;
+                border-radius: 50px; 
+                transition: all 0.15s ease-in-out;
+                
+                &:hover{
+                    background-color: var(--bg-secondary);
+                    color: var(--text-secondary)
+                }
+            }
+        }
+
+        img{
+            width: 35rem;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+
+    .topics {
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .posts_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+}

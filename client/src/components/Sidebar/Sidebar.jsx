@@ -17,37 +17,37 @@ export default function Sidebar() {
         </div>
         <li className="nav-item active">
           <GridViewOutlinedIcon />
-          <a href="#" className="nav-link">
+          <a href="discover" className="nav-link">
             <span className="link-text">Discover</span>
           </a>
         </li>
         <li className="nav-item">
           <ImageAspectRatioIcon />
-          <a href="#" className="nav-link">
+          <a href="/posts" className="nav-link">
             <span className="link-text">Your Posts</span>
           </a>
         </li>
         <li className="nav-item">
           <EditIcon />
-          <a href="#" className="nav-link">
+          <a href="/addpost" className="nav-link">
             <span className="link-text">New Post</span>
           </a>
         </li>
         <li className="nav-item">
           <EventIcon />
-          <a href="#" className="nav-link">
+          <a href="about" className="nav-link">
             <span className="link-text">About Us</span>
           </a>
         </li>
         <li className="nav-item">
           <SettingsIcon />
-          <a href="#" className="nav-link">
+          <a href="setting" className="nav-link">
             <span className="link-text">Settings</span>
           </a>
         </li>
         <li className="nav-item">
           <LogoutIcon />
-          <a href="#" className="nav-link">
+          <a href="logout" className="nav-link">
             <span className="link-text">Logout</span>
           </a>
         </li>
