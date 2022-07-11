@@ -14,7 +14,9 @@ export default function Discover() {
           <p>Calling out for you 3D artist who wanna be a super standout in the market, read the article!</p>
           <button className="btn_banner">Read Now</button>
         </div>
-        <img src="https://i.all3dp.com/wp-content/uploads/2021/05/11155257/blender-gurus-famous-blender-donut-destinyrko-via-reddit-210410.jpg" alt="postpic" />
+        <div className="postImg">
+
+        </div>
       </div>
       <h1>Topics Match for You</h1>
       <div className="topics">

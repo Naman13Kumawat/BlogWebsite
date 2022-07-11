@@ -1,3 +1,5 @@
+@import "../../util/util";
+
 .discover_container {
     display: flex;
     padding: 2rem 0;
@@ -19,13 +21,15 @@
         transition: all 0.15s ease-in-out;
 
         &:hover {
-            background-color: var(--bg-secondary);
-            color: var(--text-secondary);
+            background-color: $bg-secondary;
+            color: $text-secondary;
         }
     }
 
     .heading {
         display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
         width: 100%;
         justify-content: space-between;
     }
@@ -39,48 +43,52 @@
 
         .banner_body {
             border-radius: 10px 0 0 10px;
-            padding:2rem;
+            padding: 2rem;
             background-image: url(https://media.istockphoto.com/vectors/abstract-black-stripes-diagonal-background-vector-id1294603953?k=20&m=1294603953&s=612x612&w=0&h=KLAV73oMUFA2ucWMMTOdXT8Vn4LVUsh6NTiXRmlX5ZA=);
-            color: var(--text-secondary);
 
-            h1{
+            h1 {
                 line-height: 2;
                 font-size: 1.8rem;
+                color: $text-secondary;
+
             }
 
-            p{
+            p {
                 font-size: 0.8rem;
                 line-height: 2;
                 margin: 1rem 0;
-                opacity: 0.5;
+                color: rgba(255, 255, 255, 0.5)
             }
 
-            .btn_banner{
-                background-color:  #fff;
+            .btn_banner {
+                background-color: #fff;
                 border: none;
-                font-family: "Montserrat", "Helvetica Neue" , sans-serif;
+                font-family: "Montserrat", "Helvetica Neue", sans-serif;
                 font-weight: 600;
                 font-size: 0.7rem;
                 padding: 0.5rem 1.5rem;
                 cursor: pointer;
-                border-radius: 50px; 
+                border-radius: 50px;
                 transition: all 0.15s ease-in-out;
-                
-                &:hover{
-                    background-color: var(--bg-secondary);
-                    color: var(--text-secondary)
+
+                &:hover {
+                    background-color: $bg-secondary;
+                    color: $text-secondary;
                 }
             }
         }
 
-        img{
-            width: 35rem;
+        .postImg {
+            width: 100%;
+            background-image: url(https://i.all3dp.com/wp-content/uploads/2021/05/11155257/blender-gurus-famous-blender-donut-destinyrko-via-reddit-210410.jpg);
             border-radius: 0 10px 10px 0;
+            background-size: cover;
         }
     }
 
     .topics {
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
         margin: 1rem 0;
     }
@@ -88,7 +96,28 @@
     .posts_container {
         display: flex;
         flex-wrap: wrap;
+        gap: 4rem;
         justify-content: space-evenly;
 
+    }
+}
+
+
+@media only screen and (max-width:430px) {
+    .discover_container {
+        .banner {
+
+            .banner_body {
+                border-radius: 10px;
+
+                h1{
+                    line-height: 1.5;
+                }
+            }
+
+            .postImg {
+                display: none;
+            }
+        }
     }
 }

@@ -1,5 +1,14 @@
+@import "../../util/util";
+
+
 .profile_container{
     display: flex;
     justify-content: center;
     flex: 2;
+}
+
+@media only screen and (max-width: 900px){
+    .profile_container{
+        display: none;
+    }
 }

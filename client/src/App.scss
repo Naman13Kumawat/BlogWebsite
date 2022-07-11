@@ -1,9 +1,4 @@
-:root {
-    --text-primary: #000;
-    --text-secondary: #fff;
-    --bg-primary: #fff;
-    --bg-secondary: rgb(70, 70, 70);
-}
+@import "./util/util";
 
 * {
     margin: 0;
@@ -34,14 +29,25 @@ body {
 .flex_container {
     display: flex;
     justify-content: space-around;
-    margin-left: 5rem;
 
     .main {
         display: flex;
         flex: 5;
         flex-direction: column;
-        padding: 2rem;
+        padding: 1rem;
         border-right: 1px solid lightgray;
+        margin-bottom: 5rem;
 
+    }
+}
+
+@media only screen and (min-width: 786px) {
+    .flex_container{
+        margin-left: 5rem;
+
+        .main{
+            margin-bottom: 0;
+            padding: 2rem;
+        }
     }
 }
