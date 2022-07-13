@@ -1,14 +1,171 @@
 @import "../../util/util";
 
 
-.profile_container{
+.profile_container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     flex: 2;
+    padding: 0 1rem;
+
+    .info {
+        margin: 2rem 0;
+        margin-left: 2rem;
+        gap: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .name {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+
+            svg {
+                cursor: pointer;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: $bg-secondary;
+                    fill: $text-secondary;
+                }
+            }
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+            color: rgb(144, 144, 144);
+        }
+
+        .profileImg {
+            width: 5rem;
+            height: 5rem;
+        }
+
+    }
+
+    .premium {
+        background-image: url(https://media.istockphoto.com/vectors/abstract-black-stripes-diagonal-background-vector-id1294603953?k=20&m=1294603953&s=612x612&w=0&h=KLAV73oMUFA2ucWMMTOdXT8Vn4LVUsh6NTiXRmlX5ZA=);
+        color: $text-secondary;
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 5px;
+
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .premium_btn {
+            background-color: #fff;
+            border: none;
+            font-family: "Montserrat", "Helvetica Neue", sans-serif;
+            font-weight: 600;
+            font-size: 0.7rem;
+            display: block;
+            margin: 1rem auto;
+            padding: 0.5rem 1.5rem;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.15s ease-in-out;
+
+            &:hover {
+                background-color: $bg-secondary;
+                color: $text-secondary;
+            }
+        }
+    }
+
+    .card {
+        border-top: 1px solid lightgray;
+        padding: 2rem;
+
+        .postImg {
+            border-radius: 5px;
+
+        }
+
+        .bar {
+            display: block;
+            position: relative;
+            width: 100%;
+            border-radius: 5px;
+            height: 5px;
+            background-color: rgb(210, 210, 210);
+
+            &:after {
+                content: "";
+                width: 75%;
+                position: absolute;
+                border-radius: inherit;
+                height: inherit;
+                background-color: #000;
+            }
+        }
+
+        .btn {
+            background-color: #000;
+            color: $text-secondary;
+            border: none;
+            font-family: "Montserrat", "Helvetica Neue", sans-serif;
+            font-weight: 600;
+            font-size: 0.7rem;
+            display: block;
+            margin: 1rem auto;
+            padding: 0.5rem 1.5rem;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 50px;
+            transition: all 0.15s ease-in-out;
+
+            &:hover {
+                background-color: $bg-primary;
+                color: $text-primary;
+            }
+        }
+    }
+
+    .moreTopics {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        border-top: 1px solid lightgray;
+        padding: 2rem;
+
+        h1{
+            font-size:1.5rem;
+        }
+
+        .btn {
+            background: none;
+            border: 1px solid lightgray;
+            font-family: "Montserrat", "Helvetica Neue", sans-serif;
+            font-weight: 600;
+            font-size: 0.7rem;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+
+            &:hover {
+                background-color: $bg-secondary;
+                color: $text-secondary;
+            }
+        }
+    }
 }
 
-@media only screen and (max-width: 900px){
-    .profile_container{
+@media only screen and (max-width: 900px) {
+    .profile_container {
         display: none;
     }
 }
