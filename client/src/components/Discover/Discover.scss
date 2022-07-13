@@ -83,6 +83,7 @@
             background-image: url(https://i.all3dp.com/wp-content/uploads/2021/05/11155257/blender-gurus-famous-blender-donut-destinyrko-via-reddit-210410.jpg);
             border-radius: 0 10px 10px 0;
             background-size: cover;
+            background-position: center;
         }
     }
 
@@ -102,6 +103,15 @@
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .discover_container {
+        .posts_container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
 
 @media only screen and (max-width:430px) {
     .discover_container {
@@ -110,7 +120,7 @@
             .banner_body {
                 border-radius: 10px;
 
-                h1{
+                h1 {
                     line-height: 1.5;
                 }
             }
