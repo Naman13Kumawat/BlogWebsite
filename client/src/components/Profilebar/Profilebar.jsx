@@ -12,16 +12,16 @@ export default function Profilebar() {
         />
         <span>
           <span className="name">
-            <h1>Emy Ley</h1>
-            <ModeEditOutlineOutlinedIcon />
+            <h1 className="sub-heading-text">Emy Ley</h1>
+            <ModeEditOutlineOutlinedIcon className="svg_style" />
           </span>
-          <p>Member</p>
+          <p className="para-text">Member</p>
         </span>
       </div>
 
       <div className="premium">
-        <h1>Wanna read more? Be a Premium Member.</h1>
-        <button className="premium_btn">Learn More</button>
+        <h1 className="title-text">Wanna read more? Be a Premium Member.</h1>
+        <button className="btn">Learn More</button>
       </div>
       <div className="card">
         <img
@@ -29,16 +29,18 @@ export default function Profilebar() {
           alt="postpicture"
           className="postImg"
         />
-        <h1>Why you need an AI robot for your office and how it works</h1>
-        <p>
-          In this article, we'll learn how to dicuss about robot and future
-          work.
-        </p>
+        <div className="card_body">
+          <h1 className="title-text">Why you need an AI robot for your office and how it works</h1>
+          <p className="para-text">
+            In this article, we'll learn how to dicuss about robot and future
+            work.
+          </p>
+        </div>
         <span className="bar"></span>
         <button className="btn">Continue</button>
       </div>
       <div className="moreTopics">
-      <h1>More interesting Topics</h1>
+        <h1 className="sub-heading-text">More interesting Topics</h1>
         <button className="btn">Health</button>
         <button className="btn">Social Media</button>
         <button className="btn">Politic</button>

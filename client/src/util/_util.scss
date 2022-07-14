@@ -1,4 +1,59 @@
 $text-primary: #000;
 $text-secondary: #fff;
 $bg-primary: #fff;
-$bg-secondary: rgb(70, 70, 70);
+$bg-secondary: #000;
+
+// BUTTON STYLES
+
+.btn {
+    background-color: $bg-primary;
+    border: 1px solid lightgray;
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        background-color: $bg-secondary;
+        color: $text-secondary;
+    }
+}
+
+// ICON STYLES
+
+.svg_style {
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        fill: $text-secondary;
+        background-color: $bg-secondary;
+    }
+}
+
+// FONT STYLES
+
+.heading-text {
+    font-weight: 600;
+}
+
+.sub-heading-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.title-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.para-text {
+    font-size: 0.8rem;
+    line-height: 2;
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 0.5)
+}

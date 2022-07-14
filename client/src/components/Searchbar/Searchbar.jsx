@@ -14,9 +14,9 @@ export default function Searchbar() {
       <div className="search_icons">
         <span>
           <span className="noti"></span>
-          <NotificationsNoneOutlinedIcon />
+          <NotificationsNoneOutlinedIcon className="svg_style"/>
         </span>
-        <BookmarksOutlinedIcon />
+        <BookmarksOutlinedIcon className="svg_style"/>
       </div>
     </div>
   );

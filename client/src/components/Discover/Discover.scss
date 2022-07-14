@@ -5,27 +5,6 @@
     padding: 2rem 0;
     flex-direction: column;
 
-    h1 {
-        font-weight: 600;
-    }
-
-    .btn {
-        background: none;
-        border: 1px solid lightgray;
-        font-family: "Montserrat", "Helvetica Neue", sans-serif;
-        font-weight: 600;
-        font-size: 0.7rem;
-        padding: 0.4rem 1rem;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.15s ease-in-out;
-
-        &:hover {
-            background-color: $bg-secondary;
-            color: $text-secondary;
-        }
-    }
-
     .heading {
         display: flex;
         flex-wrap: wrap;
@@ -48,33 +27,7 @@
 
             h1 {
                 line-height: 2;
-                font-size: 1.8rem;
                 color: $text-secondary;
-
-            }
-
-            p {
-                font-size: 0.8rem;
-                line-height: 2;
-                margin: 1rem 0;
-                color: rgba(255, 255, 255, 0.5)
-            }
-
-            .btn_banner {
-                background-color: #fff;
-                border: none;
-                font-family: "Montserrat", "Helvetica Neue", sans-serif;
-                font-weight: 600;
-                font-size: 0.7rem;
-                padding: 0.5rem 1.5rem;
-                cursor: pointer;
-                border-radius: 50px;
-                transition: all 0.15s ease-in-out;
-
-                &:hover {
-                    background-color: $bg-secondary;
-                    color: $text-secondary;
-                }
             }
         }
 

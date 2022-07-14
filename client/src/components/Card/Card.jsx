@@ -9,8 +9,8 @@ export default function Card() {
         className="postImg"
       />
       <div className="card_body">
-        <h1>How to create awesome 3D model with Blender</h1>
-        <p>
+        <h1 className="title-text">How to create awesome 3D model with Blender</h1>
+        <p className="para-text">
           In this article, we'll learn how to create a 3D model with blender
           only.
         </p>
@@ -19,7 +19,7 @@ export default function Card() {
             src="https://www.nicepng.com/png/full/182-1829287_cammy-lin-ux-designer-circle-picture-profile-girl.png"
             alt="profilePic"
           />
-          <p>
+          <p className="para-text">
             by <b>Budi Supriadi</b>&nbsp;&nbsp;&nbsp;
             <span className="circle">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;
             7 min read
