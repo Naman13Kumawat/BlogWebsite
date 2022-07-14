@@ -1,19 +1,21 @@
 import React from "react";
-import { Sidebar, Discover, Searchbar, Profilebar } from "./components";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import {LandingPage, AddPost, UserPosts, Setting, About} from "./Pages";
 
 import "./App.scss";
 
 export default function App() {
   return (
-    <>
-    <Sidebar />
-    <div className="flex_container">
-      <div className="main">
-        <Searchbar />
-        <Discover />
-      </div>
-      <Profilebar />
-    </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/addpost" element={<AddPost />} />
+        <Route path="/settings" element={<Setting />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/posts" element={<UserPosts />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
